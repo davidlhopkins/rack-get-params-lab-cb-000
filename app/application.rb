@@ -15,7 +15,7 @@ class Application
       search_term = req.params["q"]
       resp.write handle_search(search_term)
     else
-      resp.write "Your cart is empty"
+      resp.write "Path Not Found"
     end
 
     resp.finish
